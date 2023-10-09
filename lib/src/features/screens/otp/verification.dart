@@ -12,20 +12,22 @@ class VerificationScreen extends StatelessWidget {
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.only(left: paddingLeft,right: paddingRight),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          const SizedBox(height: 200,),
-          Text(enterNumber, style: Theme.of(context).textTheme.displayLarge,),
-          kSpacing(),
-          Text(phoneNuber, style: Theme.of(context).textTheme.labelLarge,),
-          const SizedBox(height: 100,),
-          const CustomOtpField(),
-          const SizedBox(height: 200,),
-          Text(didntGetCode, style: Theme.of(context).textTheme.labelLarge,),
-          kSpacing(),
-          Text("$quote $privacyPolicy and $terms", style: Theme.of(context).textTheme.displaySmall,)
-        ],
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            const SizedBox(height: 200,),
+            Text(enterNumber, style: Theme.of(context).textTheme.displayLarge,),
+            kSpacing(),
+            Text(phoneNuber, style: Theme.of(context).textTheme.labelLarge,),
+            const SizedBox(height: 100,),
+            const CustomOtpField(),
+            const SizedBox(height: 200,),
+            Text(didntGetCode, style: Theme.of(context).textTheme.labelLarge,),
+            kSpacing(),
+            Text("$quote $privacyPolicy and $terms", style: Theme.of(context).textTheme.displaySmall,textAlign: TextAlign.center,)
+          ],
+          ),
         ),
       ),
     );

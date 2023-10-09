@@ -8,11 +8,10 @@ class CustomSocialGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: 0,right: 0),
       height: MediaQuery.of(context).size.height * 0.3,
-      decoration: BoxDecoration(
-        border: Border.all(color: Colors.grey),
-        borderRadius: BorderRadius.circular(30),
+      decoration: const BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.only(topLeft: Radius.circular(30),topRight: Radius.circular(30)),
       ),
       child: GridView.builder(scrollDirection: Axis.vertical,
                 itemCount: 6,

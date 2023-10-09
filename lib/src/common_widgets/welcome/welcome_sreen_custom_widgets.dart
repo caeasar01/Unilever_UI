@@ -5,6 +5,8 @@ import 'package:unilever_app/src/common_widgets/buttons/custom_outlined_button_i
 import 'package:unilever_app/src/common_widgets/or_seperator/or_seperator_widget.dart';
 import 'package:unilever_app/src/const/image_string.dart';
 import 'package:unilever_app/src/const/text_string.dart';
+import 'package:unilever_app/src/features/controllers/routing_controller.dart';
+import 'package:unilever_app/src/features/screens/signin/signin_screen.dart';
 
 import '../buttons/custom_elevated_button_ii.dart';
 import '../buttons/custom_outlined_button.dart';
@@ -22,6 +24,7 @@ Widget kLogo() {
 
 Widget kSignInBtn() {
   return CustomElevatedButton(
+    btnRoute: const SignInScreen(),
       btnName: signIn,
       btnPosition: Alignment.center,
       btnWidth: double.infinity, btnColor: AppColorTheme.lightColorTheme.primary,);

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:unilever_app/src/const/size.dart';
+import 'package:unilever_app/src/features/controllers/routing_controller.dart';
+import 'package:unilever_app/src/features/screens/otp/verification.dart';
 
 class CustomElevatedButton extends StatelessWidget {
   final String btnName;
@@ -11,6 +14,7 @@ class CustomElevatedButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final pageController = Get.put(RoutingController());
     return Align(
       alignment: btnPosition,
       child: Container(
@@ -21,7 +25,7 @@ class CustomElevatedButton extends StatelessWidget {
           color: btnColor,
         ),
         child: ElevatedButton(
-          onPressed: (){},
+          onPressed: (){pageController.pageRouteController( btnRoute);},
           style: Theme.of(context).elevatedButtonTheme.style, 
           child: Text(btnName.toUpperCase()),
           ),

@@ -42,3 +42,7 @@ const String phoneNuber = "+880 1531956470";
 
 const String link = "http//unileverecommerceapp";
 const String copyLink = "Copy Link";
+
+//Screens
+const String shoppingCart = "Shopping Cart";
+const String addToDelivery = "Add To Delivery";

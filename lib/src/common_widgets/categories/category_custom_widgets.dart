@@ -1,7 +1,62 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_icon_class/font_awesome_icon_class.dart';
+import 'package:get/get.dart';
 import 'package:unilever_app/src/common_widgets/app_bar/custom_appbar.dart';
+import 'package:unilever_app/src/common_widgets/home/home_custom_tap.dart';
+import 'package:unilever_app/src/common_widgets/home/tab_I.dart';
+import 'package:unilever_app/src/common_widgets/home/tab_II.dart';
+import 'package:unilever_app/src/common_widgets/product/custom_product_menu.dart';
+import 'package:unilever_app/src/const/image_string.dart';
 import 'package:unilever_app/src/const/text_string.dart';
+import 'package:unilever_app/src/features/controllers/home_tabs-controller.dart';
 
-Widget kCatAppBar(){
+import 'custom_cart_tab_bar.dart';
+
+Widget kCatAppBar() {
   return const CustomAppBar(appBarTittle: category);
+}
+
+Widget kCartTabBar() {
+  final controller = Get.put(HomeTabsController());
+  return CatTabBar(
+    controller: controller.tabcontroller,
+    tabs: const [
+      TabI(tabIcon: FontAwesomeIcons.house, tabName: home),
+      TabI(tabIcon: FontAwesomeIcons.person, tabName: "personal Care"),
+      TabI(
+          tabIcon: FontAwesomeIcons.bowlFood, tabName: "food & \n Refreshment"),
+    ],
+    tabContents: [
+      CustomTabBar(
+          tabs: const [
+            TabII(tabLabel: "Skin Cleaning"),
+            TabII(tabLabel: "oral Care"),
+            TabII(tabLabel: "Skin Care"),
+          ], tabContents: const[
+            CustomProductMenu(productImage: logoImage, productName: "productName",scrollDirection: Axis.horizontal,),
+            CustomProductMenu(productImage: logoImage, productName: "productName",scrollDirection: Axis.horizontal,),
+            CustomProductMenu(productImage: logoImage, productName: "productName",scrollDirection: Axis.horizontal,),
+          ], controller: controller.tabcontroller),
+      CustomTabBar(
+          tabs: const [
+            TabII(tabLabel: "oral Care"),
+            TabII(tabLabel: "Skin Care"),
+            TabII(tabLabel: "Skin Cleaning"),
+          ], tabContents: const [
+            CustomProductMenu(productImage: logoImage, productName: "productName",scrollDirection: Axis.horizontal,),
+            CustomProductMenu(productImage: logoImage, productName: "productName",scrollDirection: Axis.horizontal,),
+            CustomProductMenu(productImage: logoImage, productName: "productName",scrollDirection: Axis.horizontal,),
+          ], controller: controller.tabcontroller),
+      CustomTabBar(
+          tabs: const [
+            TabII(tabLabel: "Skin Care"),
+            TabII(tabLabel: "Skin Cleaning"),
+            TabII(tabLabel: "oral Care"),
+          ], tabContents: const [
+            CustomProductMenu(productImage: logoImage, productName: "productName",scrollDirection: Axis.horizontal,),
+            CustomProductMenu(productImage: logoImage, productName: "productName",scrollDirection: Axis.horizontal,),
+            CustomProductMenu(productImage: logoImage, productName: "productName",scrollDirection: Axis.horizontal,),
+          ], controller: controller.tabcontroller),
+    ],
+  );
 }

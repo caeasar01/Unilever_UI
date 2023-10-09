@@ -17,7 +17,7 @@ class CustomAppBar extends StatelessWidget {
     final _width = MediaQuery.of(context).size.width;
     return AppBar(
       elevation: 0,
-      backgroundColor: Colors.transparent,
+      backgroundColor: Colors.white,
       toolbarHeight: _height*0.1,
       centerTitle: true,
       leading: InkWell(

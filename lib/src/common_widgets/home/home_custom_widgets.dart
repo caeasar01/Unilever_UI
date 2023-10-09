@@ -27,8 +27,8 @@ Widget kHomeTabs(){
       TabII(tabLabel: popular),
     ], 
     tabContents: const [
-      CustomTabViewI(productCart: offer, productName: toothPaste, productImage: logoImage),
-      CustomTabViewI(productCart: recommended, productName: toothPaste, productImage: logoImage),
-      CustomTabViewI(productCart: popular, productName: toothPaste, productImage: logoImage),
+      CustomTabViewI(productCart: offer, productName: toothPaste, productImage: logoImage,crossCount: 2,),
+      CustomTabViewI(productCart: recommended, productName: toothPaste, productImage: logoImage,crossCount: 2,),
+      CustomTabViewI(productCart: popular, productName: toothPaste, productImage: logoImage,crossCount: 2,),
     ]);
 }

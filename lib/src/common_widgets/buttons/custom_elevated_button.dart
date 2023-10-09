@@ -3,12 +3,13 @@ import 'package:get/get.dart';
 import 'package:unilever_app/src/const/size.dart';
 import 'package:unilever_app/src/features/controllers/routing_controller.dart';
 import 'package:unilever_app/src/features/screens/otp/verification.dart';
+import 'package:unilever_app/src/routing/routing.dart';
 
 class CustomElevatedButton extends StatelessWidget {
   final String btnName;
   final AlignmentGeometry btnPosition;
   final double btnWidth;
-  final Widget? btnRoute;
+  final String? btnRoute;
   final Color btnColor;
   const CustomElevatedButton({super.key,required this.btnName, required this.btnPosition, this.btnRoute, this.btnWidth = double.infinity, required this.btnColor,});
 

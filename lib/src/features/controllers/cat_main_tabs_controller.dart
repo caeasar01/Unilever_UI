@@ -3,7 +3,8 @@ import 'package:get/get.dart';
 
 class CatMainTabsController extends GetxController with GetSingleTickerProviderStateMixin{
   static CatMainTabsController get find => Get.find();
-  late TabController controller;
+  late TabController tabcontroller;
+
 
     @override
   void onInit(){
@@ -13,12 +14,12 @@ class CatMainTabsController extends GetxController with GetSingleTickerProviderS
 
   @override
   void onClose(){
-    controller.dispose();
+    tabcontroller.dispose();
     super.onClose();
   }
 
 
   getTabController (int length) {
-    controller = TabController(length: length, vsync: this);
+    tabcontroller = TabController(length: length, vsync: this);
   }
 }

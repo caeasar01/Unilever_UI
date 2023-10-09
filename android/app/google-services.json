@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "16606931698",
+    "project_id": "unilever-b31a9",
+    "storage_bucket": "unilever-b31a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16606931698:android:cb4ef46afcfaa35b943e6b",
+        "android_client_info": {
+          "package_name": "com.example.unilever_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxO88G8qBqKQZ-LXQDwfkpUnrcQ3xt12g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

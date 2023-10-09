@@ -24,10 +24,11 @@ Widget kLogo() {
 
 Widget kSignInBtn() {
   return CustomElevatedButton(
-    btnRoute: const SignInScreen(),
+    btnRoute: "/Verification",
       btnName: signIn,
       btnPosition: Alignment.center,
-      btnWidth: double.infinity, btnColor: AppColorTheme.lightColorTheme.primary,);
+      btnWidth: double.infinity, btnColor: AppColorTheme.lightColorTheme.primary,
+      );
 }
 
 Widget kOr(){

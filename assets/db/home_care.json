@@ -1,0 +1,21 @@
+{
+    "id": "001",
+    "category": "Personal Care",
+    "product_type": [
+        {
+            "id": "0002",
+            "name": "Skin Cleansing",
+            "products": [
+                {
+                    "product_id": "00003",
+                    "product_type": "ToothPaste",
+                    "prodct_name": "Pepsodent Cavity ToothPaste",
+                    "product_brand":"Pepsodent",
+                    "product_price": 67,
+                    "product_image": "",
+                    "prodct_weight": "1kg"
+                }
+            ]
+        }
+    ]
+}

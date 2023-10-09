@@ -16,7 +16,7 @@ import 'package:unilever_app/src/features/screens/shopping_cart/shopping_cart_sr
 import '../../features/controllers/routing_controller.dart';
 
 Widget kNextButton(){
-  return CustomElevatedButton(btnName: next.toUpperCase(), btnPosition: Alignment.center, btnColor: AppColorTheme.lightColorTheme.primary,btnWidth: double.infinity,btnRoute: const VerificationScreen(),);
+  return CustomElevatedButton(btnName: next.toUpperCase(), btnPosition: Alignment.center, btnColor: AppColorTheme.lightColorTheme.primary,btnWidth: double.infinity,btnRoute: "/Verification",);
 }
 
 Widget kOr(){
